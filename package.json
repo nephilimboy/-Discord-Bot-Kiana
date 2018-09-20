@@ -8,6 +8,7 @@
     "checksum": "^0.1.1",
     "discord.js": "^11.1.0",
     "empty": "^0.10.1",
+    "express": "^4.16.3",
     "isset": "^1.0.4",
     "md5": "^2.2.1",
     "node-env-file": "^0.1.8",
