@@ -265,7 +265,7 @@ App.DynamicChannelName.loop = function (client, message) {
 
         if (us_channel != null && eu_channel != null) {
             var options = {
-                url: 'http://api.timezonedb.com/v2.1/get-time-zone?key=SNB7EZJ0LAVN&format=json&by=zone&zone=America/Atikokan&fields=formatted'
+                url: 'http://api.timezonedb.com/v2.1/get-time-zone?key=xxxxx&format=json&by=zone&zone=America/Atikokan&fields=formatted'
             };
 
             function callback(error, response, body) {
@@ -274,7 +274,7 @@ App.DynamicChannelName.loop = function (client, message) {
                     us_channel.setName("🇺🇸-> ⏰ " + ((obj.formatted.split(" "))[1].split(":"))[0] + ":" + ((obj.formatted.split(" "))[1].split(":"))[1] + " " + obj.formatted.split(" ")[0])
                         .then(function () {
                             var options = {
-                                url: 'http://api.timezonedb.com/v2.1/get-time-zone?key=SNB7EZJ0LAVN&format=json&by=zone&zone=Europe/Guernsey&fields=formatted'
+                                url: 'http://api.timezonedb.com/v2.1/get-time-zone?key=xxxx&format=json&by=zone&zone=Europe/Guernsey&fields=formatted'
                             };
 
                             function callback(error, response, body) {
